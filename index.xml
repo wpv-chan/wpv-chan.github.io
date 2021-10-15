@@ -6,7 +6,65 @@
         <description>Recent content on wPv的个人小站</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
-        <lastBuildDate>Sun, 10 Oct 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://wpv-chan.github.io/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Fri, 15 Oct 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://wpv-chan.github.io/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Figma 简单教程</title>
+        <link>https://wpv-chan.github.io/p/figma-%E7%AE%80%E5%8D%95%E6%95%99%E7%A8%8B/</link>
+        <pubDate>Fri, 15 Oct 2021 00:00:00 +0000</pubDate>
+        
+        <guid>https://wpv-chan.github.io/p/figma-%E7%AE%80%E5%8D%95%E6%95%99%E7%A8%8B/</guid>
+        <description>&lt;h2 id=&#34;figma简介&#34;&gt;Figma简介&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Figma是一个在线的UI设计工具&lt;/li&gt;
+&lt;li&gt;对于个人用户是完全免费的&lt;/li&gt;
+&lt;li&gt;拥有和Adobe XD相似的操作逻辑&lt;/li&gt;
+&lt;li&gt;支持适用于CSS，Android，iOS的文件导出&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.figma.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;官网传送门&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;建议用学校的教育邮箱注册一个教育版哦，这样可以实现多人协作&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&#34;页面元素设计&#34;&gt;页面元素设计&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;如果你以前没有使用过UI工具进行设计的推荐参考以下学习视频&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;video-wrapper&#34;&gt;
+    &lt;iframe loading=&#34;lazy&#34; 
+            src=&#34;https://www.youtube.com/embed/FTFaQWZBqQ8&#34; 
+            allowfullscreen 
+            title=&#34;YouTube Video&#34;
+    &gt;
+    &lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&#34;自己使用过程中的一些分享&#34;&gt;自己使用过程中的一些分享&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Figma支持很多插件,可以在社区中找到它们&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;figure 
+	
+		class=&#34;gallery-image&#34; 
+		style=&#34;
+			flex-grow: 82; 
+			flex-basis: 197px&#34;
+	&gt;
+	&lt;a href=&#34;https://wpv-chan.github.io/p/figma-%E7%AE%80%E5%8D%95%E6%95%99%E7%A8%8B/01.png&#34; data-size=&#34;872x1060&#34;&gt;
+		&lt;img src=&#34;https://wpv-chan.github.io/p/figma-%E7%AE%80%E5%8D%95%E6%95%99%E7%A8%8B/01.png&#34;
+			width=&#34;872&#34;
+			height=&#34;1060&#34;
+			srcset=&#34;https://wpv-chan.github.io/p/figma-%E7%AE%80%E5%8D%95%E6%95%99%E7%A8%8B/01_hu1a33407c5c7ccd79292fa9581fa30409_383744_480x0_resize_box_3.png 480w, https://wpv-chan.github.io/p/figma-%E7%AE%80%E5%8D%95%E6%95%99%E7%A8%8B/01_hu1a33407c5c7ccd79292fa9581fa30409_383744_1024x0_resize_box_3.png 1024w&#34;
+			loading=&#34;lazy&#34;
+			alt=&#34;01&#34;&gt;
+	&lt;/a&gt;
+	
+	&lt;figcaption&gt;01&lt;/figcaption&gt;
+	
+&lt;/figure&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://zhuanlan.zhihu.com/p/113751314&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;知乎： 2020年最好的Figma插件&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        </item>
+        <item>
         <title>C&#43;&#43; 学习笔记</title>
         <link>https://wpv-chan.github.io/p/c-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</link>
         <pubDate>Thu, 01 Jul 2021 00:00:00 +0000</pubDate>

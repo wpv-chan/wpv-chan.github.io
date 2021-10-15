@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>UI Design on wPv的个人小站</title>
+    <link>https://wpv-chan.github.io/categories/ui-design/</link>
+    <description>Recent content in UI Design on wPv的个人小站</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 15 Oct 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://wpv-chan.github.io/categories/ui-design/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Figma 简单教程</title>
+      <link>https://wpv-chan.github.io/p/figma-%E7%AE%80%E5%8D%95%E6%95%99%E7%A8%8B/</link>
+      <pubDate>Fri, 15 Oct 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://wpv-chan.github.io/p/figma-%E7%AE%80%E5%8D%95%E6%95%99%E7%A8%8B/</guid>
+      <description>Figma简介  Figma是一个在线的UI设计工具 对于个人用户是完全免费的 拥有和Adobe XD相似的操作逻辑 支持适用于CSS，Android，iOS的文件导出  官网传送门
+建议用学校的教育邮箱注册一个教育版哦，这样可以实现多人协作
+页面元素设计  如果你以前没有使用过UI工具进行设计的推荐参考以下学习视频    自己使用过程中的一些分享  Figma支持很多插件,可以在社区中找到它们   01 
+ 知乎： 2020年最好的Figma插件  </description>
+    </item>
+    
+  </channel>
+</rss>
