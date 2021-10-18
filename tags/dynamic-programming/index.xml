@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on wPv的个人小站</title>
-    <link>https://wpv-chan.github.io/post/</link>
-    <description>Recent content in Posts on wPv的个人小站</description>
+    <title>Dynamic Programming on wPv的个人小站</title>
+    <link>https://wpv-chan.github.io/tags/dynamic-programming/</link>
+    <description>Recent content in Dynamic Programming on wPv的个人小站</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 18 Oct 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://wpv-chan.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 18 Oct 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://wpv-chan.github.io/tags/dynamic-programming/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>编辑距离，动态规划经典问题</title>
       <link>https://wpv-chan.github.io/p/%E7%BC%96%E8%BE%91%E8%B7%9D%E7%A6%BB%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92%E7%BB%8F%E5%85%B8%E9%97%AE%E9%A2%98/</link>
@@ -17,42 +17,6 @@
 问题描述  如果可以对一个字符串进行三种操作：插入一个字符，删除一个字符，替换一个字符。 现在给你两个字符串s1和s2，求最少需要多少次操作可以把s1转换成s2。  思路分析   解决两个字符串的问题，都可以用两个指针i和j分别只想两个字符串的最后，一步一步往前移动，以缩小问题规模
   根据实际情况进行字符的插入，删除，替换以及适当地skip
   if s1[i] == s2[j]: #啥都别做（skip） #同时两个指针向前移动 else: #insert #delete #replace 代码示例 def minDistance(s1, s2) -&amp;gt; int: def dp(i, j) -&amp;gt; int: #定义dp(i, j)为s1[0...i]和s2[0...j]的最小编辑距离 #base case if i == -1: return j+1 if j == -1: return i+1 #做选择 if s1[i] == s2[j]: return dp(i - 1, j - 1) #相等就不用操作，所以不用加一直接前进 else: return min( dp(i, j - 1) + 1, #插入 #直接在s1[i]中插入一个和s2[j]一样的字符 #那么s2[j]就被匹配了，前移j，继续和i做对比 #别忘了操作数加一 dp(i - 1, j) + 1, #删除 #直接把s1[i]这个字符删除 #前移i，继续和j对比 #别忘了操作数加一 dp(i - 1, j - 1) + 1 #替换 #直接把s1[i]替换成s2[j]，这样它俩就匹配了 #同时前移i，j继续做对比 #别忘了操作数加一 ) return dp(len(s1) - 1, len(s2) - 1) 使用DP table进行重叠子问题优化 这是个一个DP table</description>
-    </item>
-    
-    <item>
-      <title>Figma 简单教程</title>
-      <link>https://wpv-chan.github.io/p/figma-%E7%AE%80%E5%8D%95%E6%95%99%E7%A8%8B/</link>
-      <pubDate>Fri, 15 Oct 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://wpv-chan.github.io/p/figma-%E7%AE%80%E5%8D%95%E6%95%99%E7%A8%8B/</guid>
-      <description>Figma简介  Figma是一个在线的UI设计工具 对于个人用户是完全免费的 拥有和Adobe XD相似的操作逻辑 支持适用于CSS，Android，iOS的文件导出  官网传送门
-建议用学校的教育邮箱注册一个教育版哦，这样可以实现多人协作
-页面元素设计  如果你以前没有使用过UI工具进行设计的推荐参考以下学习视频    自己使用过程中的一些分享  Figma支持很多插件,可以在社区中找到它们   01  知乎： 2020年最好的Figma插件
- 如果想使用Figma给你的Python程序设计GUI可以考虑使用Tkinter Designer  Tkinter Design中文使用说明</description>
-    </item>
-    
-    <item>
-      <title>C&#43;&#43; 学习笔记</title>
-      <link>https://wpv-chan.github.io/p/c-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</link>
-      <pubDate>Thu, 01 Jul 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://wpv-chan.github.io/p/c-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</guid>
-      <description>目录   1 字符串与指针
-  1.1 处理字符与字符串
-  1.2 标准C++的String类
-  1.3 指针的概念、指针变量的定义和使用
-  1.4 指针与数组
-    2 指针与函数
-  2.1 参数的传递方式
-  2.2 返回指针的函数及指向函数的指针
-  2.3 指针数组与指向指针的指针
-  2.4 内存的动态分配与释放
-  2.5 void 与 const 修饰指针变量
-    3 结构体与列表
-  3.1 结构体的建立
-  3.2 结构体的应用
-  3.3 typedef 定义类型名
-  3.</description>
     </item>
     
   </channel>
