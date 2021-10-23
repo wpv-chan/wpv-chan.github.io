@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='一点点前置知识 CSS中常用的内容元素介绍    元素名称 含义     a 链接   ul 无序列表   ol 有序列表   p 段落   h1~6 标题     a还可以有不同的状态           a:link 用户未访问过的链接   a:visited 用户访问过的链接   a:hover 当鼠标放在上面   a:active 当鼠标点击    CSS中常见的元素属性    属性名称 含义 值     text-align 对齐方式 left / right / center / justify   text-decoration 文字装饰 none / overline / line-through / underline   text-transform 文字格式 uppercase / lowercase / capitalize   font-family 字体系列 &amp;hellip;   margin 外边框 -   border 边框 -   padding 内边框 -   display 显示容器 flex / block / inline / inline-block   position 定位 static / fixed / relative / absolute / sticky   background 背景 color image repeat attachment position    Figma to CSS  在Inspect页面可以查看选中元素的详细属性   示例'><title>Figma 简单教程（二）</title>
+
+<link rel='canonical' href='https://wpv-chan.github.io/p/figma-%E7%AE%80%E5%8D%95%E6%95%99%E7%A8%8B%E4%BA%8C/'>
+
+<link rel="stylesheet" href="/scss/style.min.css"><meta property='og:title' content='Figma 简单教程（二）'>
+<meta property='og:description' content='一点点前置知识 CSS中常用的内容元素介绍    元素名称 含义     a 链接   ul 无序列表   ol 有序列表   p 段落   h1~6 标题     a还可以有不同的状态           a:link 用户未访问过的链接   a:visited 用户访问过的链接   a:hover 当鼠标放在上面   a:active 当鼠标点击    CSS中常见的元素属性    属性名称 含义 值     text-align 对齐方式 left / right / center / justify   text-decoration 文字装饰 none / overline / line-through / underline   text-transform 文字格式 uppercase / lowercase / capitalize   font-family 字体系列 &amp;hellip;   margin 外边框 -   border 边框 -   padding 内边框 -   display 显示容器 flex / block / inline / inline-block   position 定位 static / fixed / relative / absolute / sticky   background 背景 color image repeat attachment position    Figma to CSS  在Inspect页面可以查看选中元素的详细属性   示例'>
+<meta property='og:url' content='https://wpv-chan.github.io/p/figma-%E7%AE%80%E5%8D%95%E6%95%99%E7%A8%8B%E4%BA%8C/'>
+<meta property='og:site_name' content='wPv的个人小站'>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='UI' /><meta property='article:tag' content='CSS' /><meta property='article:tag' content='Android' /><meta property='article:tag' content='iOS' /><meta property='article:published_time' content='2021-10-22T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2021-10-22T00:00:00&#43;00:00'/>
+<meta name="twitter:title" content="Figma 简单教程（二）">
+<meta name="twitter:description" content="一点点前置知识 CSS中常用的内容元素介绍    元素名称 含义     a 链接   ul 无序列表   ol 有序列表   p 段落   h1~6 标题     a还可以有不同的状态           a:link 用户未访问过的链接   a:visited 用户访问过的链接   a:hover 当鼠标放在上面   a:active 当鼠标点击    CSS中常见的元素属性    属性名称 含义 值     text-align 对齐方式 left / right / center / justify   text-decoration 文字装饰 none / overline / line-through / underline   text-transform 文字格式 uppercase / lowercase / capitalize   font-family 字体系列 &amp;hellip;   margin 外边框 -   border 边框 -   padding 内边框 -   display 显示容器 flex / block / inline / inline-block   position 定位 static / fixed / relative / absolute / sticky   background 背景 color image repeat attachment position    Figma to CSS  在Inspect页面可以查看选中元素的详细属性   示例">
+    </head>
+    <body class="
+    article-page has-toc
+">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex 
+    
+        extended
+    
+">
+    
+        <div id="article-toolbar">
+            <a href="https://wpv-chan.github.io/" class="back-home">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="15 6 9 12 15 18" />
+</svg>
+
+
+
+                <span>Back</span>
+            </a>
+        </div>
+    
+<main class="main full-width">
+    <article class="main-article">
+    <header class="article-header">
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/categories/ui-design/" >
+                UI Design
+            </a>
+        
+            <a href="/categories/notes/" >
+                Notes
+            </a>
+        
+    </header>
+    
+
+    <h2 class="article-title">
+        <a href="/p/figma-%E7%AE%80%E5%8D%95%E6%95%99%E7%A8%8B%E4%BA%8C/">Figma 简单教程（二）</a>
+    </h2>
+
+    
+
+    
+    <footer class="article-time">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                <time class="article-time--published">Oct 22, 2021</time>
+            </div>
+        
+
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+                <time class="article-time--reading">
+                    3 min read
+                </time>
+            </div>
+        
+    </footer>
+    
+</div>
+</header>
+
+    <section class="article-content">
+    <h2 id="一点点前置知识">一点点前置知识</h2>
+<h3 id="css中常用的内容元素介绍">CSS中常用的内容元素介绍</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">元素名称</th>
+<th style="text-align:center">含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">a</td>
+<td style="text-align:center">链接</td>
+</tr>
+<tr>
+<td style="text-align:center">ul</td>
+<td style="text-align:center">无序列表</td>
+</tr>
+<tr>
+<td style="text-align:center">ol</td>
+<td style="text-align:center">有序列表</td>
+</tr>
+<tr>
+<td style="text-align:center">p</td>
+<td style="text-align:center">段落</td>
+</tr>
+<tr>
+<td style="text-align:center">h1~6</td>
+<td style="text-align:center">标题</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><code>a</code>还可以有不同的状态</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:center"></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">a:link</td>
+<td style="text-align:center">用户未访问过的链接</td>
+</tr>
+<tr>
+<td style="text-align:center">a:visited</td>
+<td style="text-align:center">用户访问过的链接</td>
+</tr>
+<tr>
+<td style="text-align:center">a:hover</td>
+<td style="text-align:center">当鼠标放在上面</td>
+</tr>
+<tr>
+<td style="text-align:center">a:active</td>
+<td style="text-align:center">当鼠标点击</td>
+</tr>
+</tbody>
+</table>
+<h3 id="css中常见的元素属性">CSS中常见的元素属性</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">属性名称</th>
+<th style="text-align:center">含义</th>
+<th style="text-align:center">值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">text-align</td>
+<td style="text-align:center">对齐方式</td>
+<td style="text-align:center">left / right / center / justify</td>
+</tr>
+<tr>
+<td style="text-align:center">text-decoration</td>
+<td style="text-align:center">文字装饰</td>
+<td style="text-align:center">none / overline / line-through / underline</td>
+</tr>
+<tr>
+<td style="text-align:center">text-transform</td>
+<td style="text-align:center">文字格式</td>
+<td style="text-align:center">uppercase / lowercase / capitalize</td>
+</tr>
+<tr>
+<td style="text-align:center">font-family</td>
+<td style="text-align:center">字体系列</td>
+<td style="text-align:center">&hellip;</td>
+</tr>
+<tr>
+<td style="text-align:center">margin</td>
+<td style="text-align:center">外边框</td>
+<td style="text-align:center">-</td>
+</tr>
+<tr>
+<td style="text-align:center">border</td>
+<td style="text-align:center">边框</td>
+<td style="text-align:center">-</td>
+</tr>
+<tr>
+<td style="text-align:center">padding</td>
+<td style="text-align:center">内边框</td>
+<td style="text-align:center">-</td>
+</tr>
+<tr>
+<td style="text-align:center">display</td>
+<td style="text-align:center">显示容器</td>
+<td style="text-align:center">flex / block / inline / inline-block</td>
+</tr>
+<tr>
+<td style="text-align:center">position</td>
+<td style="text-align:center">定位</td>
+<td style="text-align:center">static / fixed / relative / absolute / sticky</td>
+</tr>
+<tr>
+<td style="text-align:center">background</td>
+<td style="text-align:center">背景</td>
+<td style="text-align:center">color image repeat attachment position</td>
+</tr>
+</tbody>
+</table>
+<h2 id="figma-to-css">Figma to CSS</h2>
+<ul>
+<li>在Inspect页面可以查看选中元素的详细属性</li>
+</ul>
+<p><figure 
+	
+		class="gallery-image" 
+		style="
+			flex-grow: 184; 
+			flex-basis: 441px"
+	>
+	<a href="/p/figma-%E7%AE%80%E5%8D%95%E6%95%99%E7%A8%8B%E4%BA%8C/01.png" data-size="5344x2904">
+		<img src="/p/figma-%E7%AE%80%E5%8D%95%E6%95%99%E7%A8%8B%E4%BA%8C/01.png"
+			width="5344"
+			height="2904"
+			srcset="/p/figma-%E7%AE%80%E5%8D%95%E6%95%99%E7%A8%8B%E4%BA%8C/01_huc084a1b14ca2157d03a53dd1a7efeb4f_4156803_480x0_resize_box_3.png 480w, /p/figma-%E7%AE%80%E5%8D%95%E6%95%99%E7%A8%8B%E4%BA%8C/01_huc084a1b14ca2157d03a53dd1a7efeb4f_4156803_1024x0_resize_box_3.png 1024w"
+			loading="lazy"
+			alt="示例">
+	</a>
+	
+	<figcaption>示例</figcaption>
+	
+</figure></p>
+<h3 id="complete-indexhtml-code">Complete <code>index.html</code> code</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="p">&lt;</span><span class="nt">html</span> <span class="na">lang</span><span class="o">=</span><span class="s">&#34;en&#34;</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">&#34;UTF-8&#34;</span> <span class="p">/&gt;</span>
+    <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">http-equiv</span><span class="o">=</span><span class="s">&#34;X-UA-Compatible&#34;</span> <span class="na">content</span><span class="o">=</span><span class="s">&#34;IE=edge&#34;</span> <span class="p">/&gt;</span>
+    <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">name</span><span class="o">=</span><span class="s">&#34;viewport&#34;</span> <span class="na">content</span><span class="o">=</span><span class="s">&#34;width=device-width, initial-scale=1.0&#34;</span> <span class="p">/&gt;</span>
+    <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>Welcome<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">link</span> <span class="na">rel</span><span class="o">=</span><span class="s">&#34;preconnect&#34;</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;https://fonts.googleapis.com&#34;</span> <span class="p">/&gt;</span>
+    <span class="p">&lt;</span><span class="nt">link</span> <span class="na">rel</span><span class="o">=</span><span class="s">&#34;preconnect&#34;</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;https://fonts.gstatic.com&#34;</span> <span class="na">crossorigin</span> <span class="p">/&gt;</span>
+    <span class="p">&lt;</span><span class="nt">link</span>
+      <span class="na">href</span><span class="o">=</span><span class="s">&#34;https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&amp;display=swap&#34;</span>
+      <span class="na">rel</span><span class="o">=</span><span class="s">&#34;stylesheet&#34;</span>
+    <span class="p">/&gt;</span>
+    <span class="p">&lt;</span><span class="nt">link</span> <span class="na">rel</span><span class="o">=</span><span class="s">&#34;stylesheet&#34;</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;style.css&#34;</span> <span class="p">/&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;container&#34;</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;nav-container&#34;</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;left&#34;</span><span class="p">&gt;</span>
+          <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;logo&#34;</span><span class="p">&gt;</span>Spatial Intelligence <span class="err">&amp;</span> Interaction Group<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+        <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+
+        <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;right&#34;</span><span class="p">&gt;</span>
+          <span class="p">&lt;</span><span class="nt">nav</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;menu-items&#34;</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;#&#34;</span><span class="p">&gt;</span>wiki<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;#&#34;</span><span class="p">&gt;</span>成员介绍<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;#&#34;</span><span class="p">&gt;</span>历年风采<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">a</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;btn dark&#34;</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;#&#34;</span><span class="p">&gt;</span>联系我们<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+          <span class="p">&lt;/</span><span class="nt">nav</span><span class="p">&gt;</span>
+
+          <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;dark-switch active&#34;</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;images/dark-switch.svg&#34;</span> <span class="na">alt</span><span class="o">=</span><span class="s">&#34;&#34;</span> <span class="p">/&gt;</span>
+          <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+
+          <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;light-switch&#34;</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;images/light-switch.svg&#34;</span> <span class="na">alt</span><span class="o">=</span><span class="s">&#34;&#34;</span> <span class="p">/&gt;</span>
+          <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+        <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+      <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+
+      <span class="p">&lt;</span><span class="nt">header</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;hero-section&#34;</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;left&#34;</span><span class="p">&gt;</span>
+          <span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>Learn Web Design With Dr. Liu<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+          <span class="p">&lt;</span><span class="nt">p</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;sub-heading&#34;</span><span class="p">&gt;</span>
+            In this course, you will learn the basics of web programming and spatial data visualization.
+          <span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+
+          <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;buttons&#34;</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;#&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;btn dark&#34;</span><span class="p">&gt;</span>立即加入<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;#&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;btn light&#34;</span><span class="p">&gt;</span>了解更多<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+          <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+        <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+
+        <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;right&#34;</span><span class="p">&gt;</span>
+          <span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;images/hero-image.png&#34;</span> <span class="na">alt</span><span class="o">=</span><span class="s">&#34;&#34;</span> <span class="p">/&gt;</span>
+        <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+      <span class="p">&lt;/</span><span class="nt">header</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+
+    <span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;main.js&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+
+</code></pre></div><h3 id="complete-stylecss-code">Complete <code>style.css</code> code</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-css" data-lang="css"><span class="p">:</span><span class="nd">root</span> <span class="p">{</span>
+  <span class="nv">--dark</span><span class="p">:</span> <span class="mh">#023047</span><span class="p">;</span>
+  <span class="nv">--light</span><span class="p">:</span> <span class="mh">#f1faee</span><span class="p">;</span>
+  <span class="nv">--dark-bg</span><span class="p">:</span> <span class="mh">#01141d</span><span class="p">;</span>
+  <span class="nv">--light-bg</span><span class="p">:</span> <span class="mh">#ffffff</span><span class="p">;</span>
+  <span class="nv">--logo</span><span class="p">:</span> <span class="mh">#fd5e5e</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="o">*</span> <span class="p">{</span>
+  <span class="k">box-sizing</span><span class="p">:</span> <span class="kc">border-box</span><span class="p">;</span>
+  <span class="k">margin</span><span class="p">:</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="k">padding</span><span class="p">:</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nt">body</span> <span class="p">{</span>
+  <span class="k">font-family</span><span class="p">:</span> <span class="s2">&#34;Poppins&#34;</span><span class="p">,</span> <span class="kc">sans-serif</span><span class="p">;</span>
+  <span class="k">background</span><span class="p">:</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">light</span><span class="o">-</span><span class="n">bg</span><span class="p">);</span>
+  <span class="k">height</span><span class="p">:</span> <span class="mi">100</span><span class="kt">vh</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nt">body</span><span class="p">.</span><span class="nc">dark-mode</span> <span class="p">{</span>
+  <span class="nv">--light</span><span class="p">:</span> <span class="mh">#023047</span><span class="p">;</span>
+  <span class="nv">--dark</span><span class="p">:</span> <span class="mh">#f1faee</span><span class="p">;</span>
+  <span class="nv">--light-bg</span><span class="p">:</span> <span class="mh">#01141d</span><span class="p">;</span>
+  <span class="nv">--dark-bg</span><span class="p">:</span> <span class="mh">#ffffff</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="p">.</span><span class="nc">container</span> <span class="p">{</span>
+  <span class="k">width</span><span class="p">:</span> <span class="mi">1166</span><span class="kt">px</span><span class="p">;</span>
+  <span class="k">margin</span><span class="p">:</span> <span class="mi">0</span> <span class="kc">auto</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="p">.</span><span class="nc">nav-container</span> <span class="p">{</span>
+  <span class="k">display</span><span class="p">:</span> <span class="kc">flex</span><span class="p">;</span>
+  <span class="k">justify-content</span><span class="p">:</span> <span class="kc">space-between</span><span class="p">;</span>
+  <span class="k">align-items</span><span class="p">:</span> <span class="kc">center</span><span class="p">;</span>
+  <span class="k">margin-top</span><span class="p">:</span> <span class="mi">34</span><span class="kt">px</span><span class="p">;</span>
+  <span class="k">position</span><span class="p">:</span> <span class="kc">fixed</span><span class="p">;</span>
+  <span class="k">width</span><span class="p">:</span> <span class="mi">1166</span><span class="kt">px</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="p">.</span><span class="nc">nav-container</span> <span class="p">.</span><span class="nc">logo</span> <span class="p">{</span>
+  <span class="k">font-size</span><span class="p">:</span> <span class="mi">20</span><span class="kt">px</span><span class="p">;</span>
+  <span class="k">font-weight</span><span class="p">:</span> <span class="mi">700</span><span class="p">;</span>
+  <span class="k">color</span><span class="p">:</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">logo</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="p">.</span><span class="nc">nav-container</span> <span class="p">.</span><span class="nc">right</span> <span class="p">{</span>
+  <span class="k">display</span><span class="p">:</span> <span class="kc">flex</span><span class="p">;</span>
+  <span class="k">align-items</span><span class="p">:</span> <span class="kc">center</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="p">.</span><span class="nc">nav-container</span> <span class="p">.</span><span class="nc">menu-items</span> <span class="nt">a</span> <span class="p">{</span>
+  <span class="k">font-size</span><span class="p">:</span> <span class="mi">18</span><span class="kt">px</span><span class="p">;</span>
+  <span class="k">font-weight</span><span class="p">:</span> <span class="mi">700</span><span class="p">;</span>
+  <span class="k">color</span><span class="p">:</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">dark</span><span class="p">);</span>
+  <span class="k">text-decoration</span><span class="p">:</span> <span class="kc">none</span><span class="p">;</span>
+  <span class="k">margin-right</span><span class="p">:</span> <span class="mi">70</span><span class="kt">px</span><span class="p">;</span>
+  <span class="k">display</span><span class="p">:</span> <span class="kc">inline-block</span><span class="p">;</span>
+  <span class="k">transition</span><span class="p">:</span> <span class="kc">all</span> <span class="mi">500</span><span class="kt">ms</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="p">.</span><span class="nc">nav-container</span> <span class="p">.</span><span class="nc">menu-items</span> <span class="nt">a</span><span class="p">:</span><span class="nd">hover</span> <span class="p">{</span>
+  <span class="k">transform</span><span class="p">:</span> <span class="nb">translateY</span><span class="p">(</span><span class="mi">-2</span><span class="kt">px</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="p">.</span><span class="nc">nav-container</span> <span class="p">.</span><span class="nc">menu-items</span> <span class="nt">a</span><span class="p">.</span><span class="nc">btn</span> <span class="p">{</span>
+  <span class="k">padding</span><span class="p">:</span> <span class="mi">8</span><span class="kt">px</span> <span class="mi">32</span><span class="kt">px</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="c">/* Buttons */</span>
+
+<span class="nt">a</span><span class="p">.</span><span class="nc">btn</span> <span class="p">{</span>
+  <span class="k">box-shadow</span><span class="p">:</span> <span class="mi">0</span><span class="kt">px</span> <span class="mi">4</span><span class="kt">px</span> <span class="mi">16</span><span class="kt">px</span> <span class="nb">rgba</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mf">0.22</span><span class="p">);</span>
+  <span class="k">border-radius</span><span class="p">:</span> <span class="mi">8</span><span class="kt">px</span><span class="p">;</span>
+  <span class="k">padding</span><span class="p">:</span> <span class="mi">12</span><span class="kt">px</span> <span class="mi">32</span><span class="kt">px</span><span class="p">;</span>
+  <span class="k">text-decoration</span><span class="p">:</span> <span class="kc">none</span><span class="p">;</span>
+  <span class="k">font-size</span><span class="p">:</span> <span class="mi">18</span><span class="kt">px</span><span class="p">;</span>
+  <span class="k">font-weight</span><span class="p">:</span> <span class="mi">700</span><span class="p">;</span>
+  <span class="k">display</span><span class="p">:</span> <span class="kc">inline-block</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nt">a</span><span class="p">.</span><span class="nc">btn</span><span class="p">.</span><span class="nc">dark</span> <span class="p">{</span>
+  <span class="k">background</span><span class="p">:</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">dark</span><span class="p">);</span>
+  <span class="k">color</span><span class="p">:</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">light</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="nt">a</span><span class="p">.</span><span class="nc">btn</span><span class="p">.</span><span class="nc">light</span> <span class="p">{</span>
+  <span class="k">background</span><span class="p">:</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">light</span><span class="p">);</span>
+  <span class="k">color</span><span class="p">:</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">dark</span><span class="p">);</span>
+  <span class="k">border</span><span class="p">:</span> <span class="mi">1</span><span class="kt">px</span> <span class="kc">solid</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">dark</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="c">/* Dark/light switch */</span>
+
+<span class="p">.</span><span class="nc">nav-container</span> <span class="p">.</span><span class="nc">dark-switch</span><span class="o">,</span>
+<span class="p">.</span><span class="nc">nav-container</span> <span class="p">.</span><span class="nc">light-switch</span> <span class="p">{</span>
+  <span class="k">position</span><span class="p">:</span> <span class="kc">absolute</span><span class="p">;</span>
+  <span class="k">right</span><span class="p">:</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="k">transform</span><span class="p">:</span> <span class="nb">translateY</span><span class="p">(</span><span class="mi">-16</span><span class="kt">px</span><span class="p">);</span>
+  <span class="k">opacity</span><span class="p">:</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="n">pointer-events</span><span class="p">:</span> <span class="kc">none</span><span class="p">;</span>
+  <span class="k">display</span><span class="p">:</span> <span class="kc">flex</span><span class="p">;</span>
+  <span class="k">transition</span><span class="p">:</span> <span class="kc">all</span> <span class="mi">500</span><span class="kt">ms</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="p">.</span><span class="nc">nav-container</span> <span class="p">.</span><span class="nc">dark-switch</span><span class="p">.</span><span class="nc">active</span><span class="o">,</span>
+<span class="p">.</span><span class="nc">nav-container</span> <span class="p">.</span><span class="nc">light-switch</span><span class="p">.</span><span class="nc">active</span> <span class="p">{</span>
+  <span class="k">opacity</span><span class="p">:</span> <span class="mi">1</span><span class="p">;</span>
+  <span class="k">cursor</span><span class="p">:</span> <span class="kc">pointer</span><span class="p">;</span>
+  <span class="n">pointer-events</span><span class="p">:</span> <span class="kc">auto</span><span class="p">;</span>
+  <span class="k">transform</span><span class="p">:</span> <span class="nb">translateY</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="p">.</span><span class="nc">hero-section</span> <span class="p">{</span>
+  <span class="k">display</span><span class="p">:</span> <span class="kc">flex</span><span class="p">;</span>
+  <span class="k">align-items</span><span class="p">:</span> <span class="kc">center</span><span class="p">;</span>
+  <span class="k">height</span><span class="p">:</span> <span class="mi">100</span><span class="kt">vh</span><span class="p">;</span>
+  <span class="k">justify-content</span><span class="p">:</span> <span class="kc">space-between</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="p">.</span><span class="nc">hero-section</span> <span class="nt">h1</span> <span class="p">{</span>
+  <span class="k">font-size</span><span class="p">:</span> <span class="mi">60</span><span class="kt">px</span><span class="p">;</span>
+  <span class="k">color</span><span class="p">:</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">dark</span><span class="p">);</span>
+  <span class="k">line-height</span><span class="p">:</span> <span class="mi">120</span><span class="kt">%</span><span class="p">;</span>
+  <span class="k">width</span><span class="p">:</span> <span class="mi">587</span><span class="kt">px</span><span class="p">;</span>
+  <span class="k">margin-bottom</span><span class="p">:</span> <span class="mi">16</span><span class="kt">px</span><span class="p">;</span>
+  <span class="k">margin-top</span><span class="p">:</span> <span class="mi">60</span><span class="kt">px</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="p">.</span><span class="nc">hero-section</span> <span class="nt">p</span><span class="p">.</span><span class="nc">sub-heading</span> <span class="p">{</span>
+  <span class="k">font-size</span><span class="p">:</span> <span class="mi">20</span><span class="kt">px</span><span class="p">;</span>
+  <span class="k">line-height</span><span class="p">:</span> <span class="mi">170</span><span class="kt">%</span><span class="p">;</span>
+  <span class="k">color</span><span class="p">:</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">dark</span><span class="p">);</span>
+  <span class="k">width</span><span class="p">:</span> <span class="mi">587</span><span class="kt">px</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="p">.</span><span class="nc">hero-section</span> <span class="nt">a</span><span class="p">.</span><span class="nc">btn</span> <span class="p">{</span>
+  <span class="k">margin-top</span><span class="p">:</span> <span class="mi">20</span><span class="kt">px</span><span class="p">;</span>
+  <span class="k">margin-right</span><span class="p">:</span> <span class="mi">42</span><span class="kt">px</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="p">.</span><span class="nc">hero-section</span> <span class="p">.</span><span class="nc">right</span> <span class="p">{</span>
+  <span class="k">align-self</span><span class="p">:</span> <span class="kc">flex-end</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="p">.</span><span class="nc">hero-section</span> <span class="p">.</span><span class="nc">right</span> <span class="nt">img</span> <span class="p">{</span>
+  <span class="k">vertical-align</span><span class="p">:</span> <span class="kc">middle</span><span class="p">;</span>
+  <span class="k">height</span><span class="p">:</span> <span class="mi">550</span><span class="kt">px</span><span class="p">;</span>
+<span class="p">}</span>
+
+</code></pre></div><h3 id="complete-mainjs-code">Complete <code>main.js</code> code</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="kr">const</span> <span class="nx">darkSwitch</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="s2">&#34;.dark-switch&#34;</span><span class="p">);</span>
+<span class="kr">const</span> <span class="nx">lightSwitch</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="s2">&#34;.light-switch&#34;</span><span class="p">);</span>
+<span class="kr">const</span> <span class="nx">body</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="s2">&#34;body&#34;</span><span class="p">);</span>
+
+<span class="k">if</span> <span class="p">(</span><span class="nx">localStorage</span><span class="p">.</span><span class="nx">getItem</span><span class="p">(</span><span class="s2">&#34;darkMode&#34;</span><span class="p">))</span> <span class="p">{</span>
+  <span class="nx">body</span><span class="p">.</span><span class="nx">classList</span><span class="p">.</span><span class="nx">add</span><span class="p">(</span><span class="s2">&#34;dark-mode&#34;</span><span class="p">);</span>
+  <span class="nx">darkSwitch</span><span class="p">.</span><span class="nx">classList</span><span class="p">.</span><span class="nx">remove</span><span class="p">(</span><span class="s2">&#34;active&#34;</span><span class="p">);</span>
+  <span class="nx">lightSwitch</span><span class="p">.</span><span class="nx">classList</span><span class="p">.</span><span class="nx">add</span><span class="p">(</span><span class="s2">&#34;active&#34;</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="nx">darkSwitch</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s2">&#34;click&#34;</span><span class="p">,</span> <span class="p">()</span> <span class="p">=&gt;</span> <span class="p">{</span>
+  <span class="nx">body</span><span class="p">.</span><span class="nx">classList</span><span class="p">.</span><span class="nx">add</span><span class="p">(</span><span class="s2">&#34;dark-mode&#34;</span><span class="p">);</span>
+  <span class="nx">darkSwitch</span><span class="p">.</span><span class="nx">classList</span><span class="p">.</span><span class="nx">remove</span><span class="p">(</span><span class="s2">&#34;active&#34;</span><span class="p">);</span>
+  <span class="nx">lightSwitch</span><span class="p">.</span><span class="nx">classList</span><span class="p">.</span><span class="nx">add</span><span class="p">(</span><span class="s2">&#34;active&#34;</span><span class="p">);</span>
+  <span class="nx">localStorage</span><span class="p">.</span><span class="nx">setItem</span><span class="p">(</span><span class="s2">&#34;darkMode&#34;</span><span class="p">,</span> <span class="s2">&#34;true&#34;</span><span class="p">);</span>
+<span class="p">});</span>
+
+<span class="nx">lightSwitch</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s2">&#34;click&#34;</span><span class="p">,</span> <span class="p">()</span> <span class="p">=&gt;</span> <span class="p">{</span>
+  <span class="nx">body</span><span class="p">.</span><span class="nx">classList</span><span class="p">.</span><span class="nx">remove</span><span class="p">(</span><span class="s2">&#34;dark-mode&#34;</span><span class="p">);</span>
+  <span class="nx">darkSwitch</span><span class="p">.</span><span class="nx">classList</span><span class="p">.</span><span class="nx">add</span><span class="p">(</span><span class="s2">&#34;active&#34;</span><span class="p">);</span>
+  <span class="nx">lightSwitch</span><span class="p">.</span><span class="nx">classList</span><span class="p">.</span><span class="nx">remove</span><span class="p">(</span><span class="s2">&#34;active&#34;</span><span class="p">);</span>
+  <span class="nx">localStorage</span><span class="p">.</span><span class="nx">removeItem</span><span class="p">(</span><span class="s2">&#34;darkMode&#34;</span><span class="p">);</span>
+<span class="p">});</span>
+
+</code></pre></div><h2 id="convert-figma-to-android">Convert Figma to Android</h2>
+<div class="video-wrapper">
+    <iframe loading="lazy" 
+            src="https://www.youtube.com/embed/hQ1KtClcWiU" 
+            allowfullscreen 
+            title="YouTube Video"
+    >
+    </iframe>
+</div>
+
+
+</section>
+
+
+    <footer class="article-footer">
+    
+    <section class="article-tags">
+        
+            <a href="/tags/ui/">UI</a>
+        
+            <a href="/tags/css/">CSS</a>
+        
+            <a href="/tags/android/">Android</a>
+        
+            <a href="/tags/ios/">iOS</a>
+        
+    </section>
+
+
+    
+    <section class="article-copyright">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <path d="M14.5 9a3.5 4 0 1 0 0 6" />
+</svg>
+
+
+
+        <span>Licensed under CC BY-NC-SA 4.0</span>
+    </section>
+    </footer>
+
+
+    
+</article>
+
+    <aside class="related-contents--wrapper">
+    
+    
+        <h2 class="section-title">Related contents</h2>
+        <div class="related-contents">
+            <div class="flex article-list--tile">
+                
+                    
+<article class="">
+    <a href="/p/figma-%E7%AE%80%E5%8D%95%E6%95%99%E7%A8%8B%E4%B8%80/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Figma 简单教程（一）</h2>
+        </div>
+    </a>
+</article>
+                
+                    
+<article class="">
+    <a href="/p/%E7%BC%96%E8%BE%91%E8%B7%9D%E7%A6%BB%E9%97%AE%E9%A2%98/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">编辑距离问题</h2>
+        </div>
+    </a>
+</article>
+                
+                    
+<article class="">
+    <a href="/p/c-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">C&#43;&#43; 学习笔记</h2>
+        </div>
+    </a>
+</article>
+                
+            </div>
+        </div>
+    
+</aside>
+
+     
+     
+        
+    <div class="disqus-container">
+    <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "hugo-theme-stack" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</div>
+
+<style>
+    .disqus-container {
+        background-color: var(--card-background);
+        border-radius: var(--card-border-radius);
+        box-shadow: var(--shadow-l1);
+        padding: var(--card-padding);
+    }
+</style>
+
+<script>
+    window.addEventListener('onColorSchemeChange', (e) => {
+        if (DISQUS) {
+            DISQUS.reset({
+                reload: true
+            });
+        }
+    })
+</script>
+
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+            2020 - 
+        
+        2021 wPv的个人小站
+    </section>
+    
+    <section class="powerby">
+        Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
+        Theme <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.2.0">Stack</a></b> designed by <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
+    </section>
+</footer>
+
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer="true"
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer="true"
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.css"integrity="sha256-c0uckgykQ9v5k&#43;IqViZOZKc47Jn7KQil4/MP3ySA3F8="crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.css"integrity="sha256-SBLU4vv6CA6lHsZ1XyTdhyjJxCjPif/TRkjnsyGAGnE="crossorigin="anonymous"
+            >
+
+            </main>
+    
+        <aside class="sidebar right-sidebar sticky">
+            <section class="widget archives">
+                <div class="widget-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
+                </div>
+                <h2 class="widget-title section-title">Table of contents</h2>
+                
+                <div class="widget--toc">
+                    <nav id="TableOfContents">
+  <ol>
+    <li><a href="#一点点前置知识">一点点前置知识</a>
+      <ol>
+        <li><a href="#css中常用的内容元素介绍">CSS中常用的内容元素介绍</a></li>
+        <li><a href="#css中常见的元素属性">CSS中常见的元素属性</a></li>
+      </ol>
+    </li>
+    <li><a href="#figma-to-css">Figma to CSS</a>
+      <ol>
+        <li><a href="#complete-indexhtml-code">Complete <code>index.html</code> code</a></li>
+        <li><a href="#complete-stylecss-code">Complete <code>style.css</code> code</a></li>
+        <li><a href="#complete-mainjs-code">Complete <code>main.js</code> code</a></li>
+      </ol>
+    </li>
+    <li><a href="#convert-figma-to-android">Convert Figma to Android</a></li>
+  </ol>
+</nav>
+                </div>
+            </section>
+        </aside>
+    
+
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.5/dist/vibrant.min.js"integrity="sha256-5NovOZc4iwiAWTYIFiIM7DxKUXKWvpVEuMEPLzcm5/g="crossorigin="anonymous"
+                defer="false"
+                >
+            </script><script type="text/javascript" src="/ts/main.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+    </body>
+</html>

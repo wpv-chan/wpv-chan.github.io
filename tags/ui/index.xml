@@ -6,17 +6,28 @@
     <description>Recent content in UI on wPv的个人小站</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 15 Oct 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://wpv-chan.github.io/tags/ui/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 22 Oct 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://wpv-chan.github.io/tags/ui/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Figma 简单教程</title>
-      <link>https://wpv-chan.github.io/p/figma-%E7%AE%80%E5%8D%95%E6%95%99%E7%A8%8B/</link>
+      <title>Figma 简单教程（二）</title>
+      <link>https://wpv-chan.github.io/p/figma-%E7%AE%80%E5%8D%95%E6%95%99%E7%A8%8B%E4%BA%8C/</link>
+      <pubDate>Fri, 22 Oct 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://wpv-chan.github.io/p/figma-%E7%AE%80%E5%8D%95%E6%95%99%E7%A8%8B%E4%BA%8C/</guid>
+      <description>一点点前置知识 CSS中常用的内容元素介绍    元素名称 含义     a 链接   ul 无序列表   ol 有序列表   p 段落   h1~6 标题     a还可以有不同的状态           a:link 用户未访问过的链接   a:visited 用户访问过的链接   a:hover 当鼠标放在上面   a:active 当鼠标点击    CSS中常见的元素属性    属性名称 含义 值     text-align 对齐方式 left / right / center / justify   text-decoration 文字装饰 none / overline / line-through / underline   text-transform 文字格式 uppercase / lowercase / capitalize   font-family 字体系列 &amp;hellip;   margin 外边框 -   border 边框 -   padding 内边框 -   display 显示容器 flex / block / inline / inline-block   position 定位 static / fixed / relative / absolute / sticky   background 背景 color image repeat attachment position    Figma to CSS  在Inspect页面可以查看选中元素的详细属性   示例</description>
+    </item>
+    
+    <item>
+      <title>Figma 简单教程（一）</title>
+      <link>https://wpv-chan.github.io/p/figma-%E7%AE%80%E5%8D%95%E6%95%99%E7%A8%8B%E4%B8%80/</link>
       <pubDate>Fri, 15 Oct 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://wpv-chan.github.io/p/figma-%E7%AE%80%E5%8D%95%E6%95%99%E7%A8%8B/</guid>
-      <description>Figma简介  Figma是一个在线的UI设计工具 对于个人用户是完全免费的 拥有和Adobe XD相似的操作逻辑 支持适用于CSS，Android，iOS的文件导出  官网传送门
+      <guid>https://wpv-chan.github.io/p/figma-%E7%AE%80%E5%8D%95%E6%95%99%E7%A8%8B%E4%B8%80/</guid>
+      <description>Figma简介  Figma是一个在线的UI设计工具 对于个人用户是完全免费的 拥有和Adobe XD相似的操作逻辑  官网传送门
 建议用学校的教育邮箱注册一个教育版哦，这样可以实现多人协作
-页面元素设计  如果你以前没有使用过UI工具进行设计的推荐参考以下学习视频    自己使用过程中的一些分享  Figma支持很多插件,可以在社区中找到它们   01  知乎： 2020年最好的Figma插件
- 如果想使用Figma给你的Python程序设计GUI可以考虑使用Tkinter Designer  Tkinter Design中文使用说明</description>
+页面元素设计  如果你以前没有使用过UI工具进行设计的推荐参考以下学习视频    自己使用过程中的一些分享   Figma中的常用快捷键 史上最全 Figma 快捷键（持续更新……）
+  Figma支持很多插件,可以在社区中找到它们：知乎： 2020年最好的Figma插件
+   打开方式 
+ 如果想使用Figma给你的Python程序设计GUI可以考虑使用Tkinter Designer中文使用说明  </description>
     </item>
     
   </channel>
