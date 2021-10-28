@@ -101,7 +101,8 @@
 &lt;tr&gt;
 &lt;td style=&#34;text-align:center&#34;&gt;font-family&lt;/td&gt;
 &lt;td style=&#34;text-align:center&#34;&gt;字体系列&lt;/td&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;&amp;hellip;&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://developer.mozilla.org/zh-CN/docs/Web/CSS/font-family&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;说明&lt;/a&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td style=&#34;text-align:center&#34;&gt;margin&lt;/td&gt;
