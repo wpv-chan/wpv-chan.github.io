@@ -6,7 +6,37 @@
     <description>Recent content in Posts on wPv的个人小站</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 22 Oct 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://wpv-chan.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 03 Nov 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://wpv-chan.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>二叉树总结（一）</title>
+      <link>https://wpv-chan.github.io/p/%E4%BA%8C%E5%8F%89%E6%A0%91%E6%80%BB%E7%BB%93%E4%B8%80/</link>
+      <pubDate>Wed, 03 Nov 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://wpv-chan.github.io/p/%E4%BA%8C%E5%8F%89%E6%A0%91%E6%80%BB%E7%BB%93%E4%B8%80/</guid>
+      <description>二叉树算法设计总路线 void traverse(TreeNode root) { // root TO DO  traverse(root.left); traverse(root.right); } 一些小坑  BST（二叉搜索树）的合法性  // 常见错法  boolean isValidBST(TreeNode root) { if(root == null) return true; if(root.left != null &amp;amp;&amp;amp; root.val &amp;lt;= root.left.val) return false; if(root.right != null &amp;amp;&amp;amp; root.val &amp;gt;= rot.right.val) return false; return isValidBST(root.left) &amp;amp;&amp;amp; isValidBST(root.right); }  BST要求整棵树的左边比右边小，而不是单颗树的左边比右边小
+ // 正确做法，增加参数列表加判断  boolean isValidBST(TreeNode root, TreeNode min, TreeNode max) { if(root == null) return true; if(min !</description>
+    </item>
+    
+    <item>
+      <title>LFU内存淘汰算法的简单实现</title>
+      <link>https://wpv-chan.github.io/p/lfu%E5%86%85%E5%AD%98%E6%B7%98%E6%B1%B0%E7%AE%97%E6%B3%95%E7%9A%84%E7%AE%80%E5%8D%95%E5%AE%9E%E7%8E%B0/</link>
+      <pubDate>Sun, 31 Oct 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://wpv-chan.github.io/p/lfu%E5%86%85%E5%AD%98%E6%B7%98%E6%B1%B0%E7%AE%97%E6%B3%95%E7%9A%84%E7%AE%80%E5%8D%95%E5%AE%9E%E7%8E%B0/</guid>
+      <description>LFU: Least Frequently Used  class LFUCLass { // mapping from key to val, KV chart  HashMap&amp;lt;Integer, Interger&amp;gt; keyToVal; // mapping from key to freq, KF chart  HashMap&amp;lt;Integer, Interger&amp;gt; keyToFreq; // mapping from freq to key, FK chart  HashMap&amp;lt;Integer, Interger&amp;gt; freqToKeys; // logging the least freq  int minFreq; // logging the largest col of LFU cache  int cap; public LFUCache(int capacity) { keyToVal = new HashMap&amp;lt;&amp;gt;(); keyToFreq = new HashMap&amp;lt;&amp;gt;(); freqToKeys = new HashMap&amp;lt;&amp;gt;(); this.</description>
+    </item>
+    
+    <item>
+      <title>动态规划总结（一）</title>
+      <link>https://wpv-chan.github.io/p/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92%E6%80%BB%E7%BB%93%E4%B8%80/</link>
+      <pubDate>Sun, 24 Oct 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://wpv-chan.github.io/p/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92%E6%80%BB%E7%BB%93%E4%B8%80/</guid>
+      <description>子序列问题的两种思路  一维dp数组
+ int n = array.length; int[] dp = new int[n]; for(int i = 1; i &amp;lt; n; i++) { for(int j = 0; j &amp;lt; i; j++) { dp[i] = max(dp[i], dp[j] + ...) // min(dp[i], dp[j] + ...)  } }  最长递增子序列   二维dp数组
+ int n = array.length; int[][] dp = new dp[n][n]; for(int i = 1; i &amp;lt; n; i++) { for(int j = 0; j &amp;lt; i; j++) { if(arr[i] == arr[j]) { dp[i][j] = dp[i][j] + .</description>
+    </item>
+    
     <item>
       <title>Figma 简单教程（二）</title>
       <link>https://wpv-chan.github.io/p/figma-%E7%AE%80%E5%8D%95%E6%95%99%E7%A8%8B%E4%BA%8C/</link>
